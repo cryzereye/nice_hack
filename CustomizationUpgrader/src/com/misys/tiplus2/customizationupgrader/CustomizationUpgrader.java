@@ -1,8 +1,13 @@
 package com.misys.tiplus2.customizationupgrader;
 
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.util.ArrayList;
 
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class CustomizationUpgrader {
 
@@ -29,9 +34,11 @@ public class CustomizationUpgrader {
 	}
 	
 	public static void main(String[] args) {
-		CustomizationUpgrader cu = new CustomizationUpgrader();
-		cu.DeployInterface();
-
+		ArrayList<String> dummy = new ArrayList<String>();
+		Parser nice = new Parser("C:\\TIDev\\nice_hack", dummy);
+		//CustomizationUpgrader cu = new CustomizationUpgrader();
+		//cu.DeployInterface();
+		System.out.println("nice");
 	}
 	
 	public void DeployInterface() {
